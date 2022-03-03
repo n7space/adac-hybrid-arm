@@ -1,0 +1,3 @@
+[submodule "test/bsp"]
+	path = test/bsp
+	url = https://github.com/n7space/SAMV71-BSP.git
