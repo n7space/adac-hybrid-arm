@@ -38,7 +38,7 @@ LFLAGS= \
 	-eexception_table \
     -specs=nosys.specs \
 	-Wl,-Map=main.map \
-	-T../bsp/ld/samv71q21_sram.ld 
+	-T../ld/stm32f405.ld 
 
 SRC= \
 	main.c \
@@ -68,7 +68,7 @@ ${OUT_DIR}/reporting.o: ${UTILS_SRC_DIR}/reporting.adb ${UTILS_SRC_DIR}/reportin
 ${OUT_DIR}/nvic.o: ${BSP_DIR}/src/Nvic/Nvic.c
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
-${OUT_DIR}/startup.o: ${BSP_DIR}/src/Startup/startup_samv71q21.c
+${OUT_DIR}/startup.o: ../startup/bare.c
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
 
