@@ -4,6 +4,7 @@ TOP_DIR=$(realpath ../../)
 OUT_DIR=${TOP_DIR}/build/test/${NAME}
 UTILS_SRC_DIR=${TOP_DIR}/test/utils
 BSP_DIR=${TOP_DIR}/test/bsp/
+BINARY_NAME=${OUT_DIR}/${NAME}.elf
 
 COMMON_CFLAGS = \
 	-ffunction-sections \
@@ -48,9 +49,9 @@ OBJ=$(SRC:%.adb=${OUT_DIR}/%.o) ${OUT_DIR}/utils.o ${OUT_DIR}/reporting.o ${OUT_
 
 .PHONY: all clean
 
-all: ${OUT_DIR}/${NAME}.elf
+all: ${BINARY_NAME} test
 
-${OUT_DIR}/${NAME}.elf: ${OUT_DIR} ${OBJ}
+${BINARY_NAME}: ${OUT_DIR} ${OBJ}
 	${ADAC} ${CFLAGS} ${LFLAGS} -o $@ ${OBJ} ${LIBS}
 
 ${OUT_DIR}:
@@ -65,12 +66,12 @@ ${OUT_DIR}/utils.o: ${UTILS_SRC_DIR}/utils.adb ${UTILS_SRC_DIR}/utils.ads
 ${OUT_DIR}/reporting.o: ${UTILS_SRC_DIR}/reporting.adb ${UTILS_SRC_DIR}/reporting.ads
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
-${OUT_DIR}/nvic.o: ${BSP_DIR}/src/Nvic/Nvic.c
-	${ADAC} ${CFLAGS} -o $@ -c $<
-
 ${OUT_DIR}/startup.o: ../startup/bare.c
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
+
+test: ${BINARY_NAME}
+	${UTILS_SRC_DIR}/execute_test.sh ${BINARY_NAME}
 
 clean:
 	rm -r -f ${OUT_DIR}
