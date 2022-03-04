@@ -15,20 +15,21 @@
 
 include ../Common.mk
 
-NAME=ads
+NAME=adainterop
 
 OUT_DIR=${TOP_DIR}/build/test/${NAME}
 BINARY_NAME=${OUT_DIR}/${NAME}.elf
 
 SRC= \
 	main.c \
-	bodylessmodule.ads
+	adamodule.adb
 
 OBJ= \
 	$(SRC:%.adb=${OUT_DIR}/%.o) \
 	${OUT_DIR}/utils.o \
 	${OUT_DIR}/reporting.o \
-	${OUT_DIR}/startup.o
+	${OUT_DIR}/startup.o \
+	${OUT_DIR}/fpu.o
 
 .PHONY: all clean
 
@@ -52,6 +53,8 @@ ${OUT_DIR}/reporting.o: ${UTILS_SRC_DIR}/reporting.adb ${UTILS_SRC_DIR}/reportin
 ${OUT_DIR}/startup.o: ../startup/bare.c
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
+${OUT_DIR}/fpu.o: ${BSP_DIR}/src/Fpu/Fpu.c
+	${ADAC} ${CFLAGS} -o $@ -c $<
 
 test: ${BINARY_NAME}
 	${UTILS_SRC_DIR}/execute_test.sh ${BINARY_NAME}

@@ -15,7 +15,7 @@
 
 TOP_DIR=$(realpath ../../)
 UTILS_SRC_DIR=${TOP_DIR}/test/utils
-BSP_DIR=${TOP_DIR}/test/bsp/
+BSP_DIR=${TOP_DIR}/test/bsp
 
 COMMON_CFLAGS = \
 	-ffunction-sections \
