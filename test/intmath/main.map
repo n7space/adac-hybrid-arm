@@ -1,0 +1,666 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o (atexit)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o (exit)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o (__libc_fini_array)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o (__libc_init_array)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o (memset)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o) (__register_exitproc)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o) (__call_exitprocs)
+/home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+                              /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o (__gnat_last_chance_handler)
+/home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+                              /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o) (gnat__io__put__2)
+/home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+                              /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o) (system__machine_reset__stop)
+/usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+                              /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o (__aeabi_ldivmod)
+/usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+                              /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+/usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
+/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+                              /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o) (_exit)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+ .data          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+ .text          0x0000000000000000       0x68 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .debug_line    0x0000000000000000       0x87 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .debug_str     0x0000000000000000       0x93 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+ .text          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .data          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .bss           0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .data          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .bss           0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__uint8_array_tIP
+                0x0000000000000000       0x14 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__Oor
+                0x0000000000000000       0x28 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__Oand
+                0x0000000000000000       0x28 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__Onot
+                0x0000000000000000       0x20 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__Oor__2
+                0x0000000000000000       0x28 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__Oand__2
+                0x0000000000000000       0x28 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__Onot__2
+                0x0000000000000000       0x20 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .rodata        0x0000000000000000        0xa /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text.utils__stringtoarray
+                0x0000000000000000       0x74 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .data.utils_E  0x0000000000000000        0x2 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .comment       0x0000000000000000       0x3f /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .debug_line    0x0000000000000000      0x13f /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .debug_info    0x0000000000000000       0x22 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .debug_abbrev  0x0000000000000000       0x12 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .debug_aranges
+                0x0000000000000000       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .debug_str     0x0000000000000000       0x49 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .debug_ranges  0x0000000000000000       0x50 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+ .text          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .data          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .bss           0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .text          0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_info    0x0000000000000000      0x941 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000000000      0x1f0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_loc     0x0000000000000000       0x1e /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000000000      0x13e /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_str     0x0000000000000000      0x621 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .comment       0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .text          0x0000000000000000       0x48 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_info    0x0000000000000000      0x109 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_abbrev  0x0000000000000000       0xba /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_loc     0x0000000000000000       0xa2 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_line    0x0000000000000000       0xbf /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_str     0x0000000000000000      0x259 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .comment       0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-init.o)
+ .text          0x0000000000000000       0x94 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_info    0x0000000000000000      0xe22 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000000000      0x1de /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_loc     0x0000000000000000      0x175 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_line    0x0000000000000000      0x1c4 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_str     0x0000000000000000      0x902 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .comment       0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x38 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .text          0x0000000000000000       0xa0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .data          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .bss           0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .data.ada__exceptions__last_chance_handler_E
+                0x0000000000000000        0x2 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .text          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+ .data          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+ .bss           0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+ .data.gnat__io_E
+                0x0000000000000000        0x2 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+ .text          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+ .data          0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+ .bss           0x0000000000000000        0x0 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+ .data.system__machine_reset_E
+                0x0000000000000000        0x2 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .debug_info    0x0000000000000000       0x9a /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .debug_abbrev  0x0000000000000000       0x61 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .debug_line    0x0000000000000000       0x61 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .debug_str     0x0000000000000000      0x1ad /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .comment       0x0000000000000000       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x0000000008000000 0x0000000000100000 xr
+ram              0x0000000020000000 0x0000000000020000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/crt0.o
+LOAD /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+LOAD /home/taste/workspace/adac-hybrid-arm/build/test/intmath/utils.o
+LOAD /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a
+LOAD /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libnosys.a
+END GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+                0x0000000000004000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x4000
+                0x0000000000002000                HEAP_SIZE = DEFINED (HEAP_SIZE)?HEAP_SIZE:DEFINED (__heap_size__)?__heap_size__:0x2000
+
+.text           0x0000000008000000     0x1edc
+                0x0000000008000000                . = ALIGN (0x4)
+                0x0000000008000000                _sfixed = .
+ *(.vectors .vectors.*)
+ .vectors       0x0000000008000000       0x40 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+                0x0000000008000000                exception_table
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008000040       0x88 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+ .text.main__reporterror.1
+                0x00000000080000c8       0x18 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main     0x00000000080000e0      0xab4 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+                0x00000000080000e0                main
+ .text.main__reportsuccess.41
+                0x0000000008000b94       0x18 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testaddint64.0
+                0x0000000008000bac       0x84 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubint64.2
+                0x0000000008000c30       0x84 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmulint64.3
+                0x0000000008000cb4       0x44 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivint64.5
+                0x0000000008000cf8       0x78 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testadduint64.6
+                0x0000000008000d70       0x44 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubuint64.7
+                0x0000000008000db4       0x44 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmuluint64.8
+                0x0000000008000df8       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivuint64.10
+                0x0000000008000e50       0x5c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testaddint32.11
+                0x0000000008000eac       0x50 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubint32.12
+                0x0000000008000efc       0x50 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmulint32.13
+                0x0000000008000f4c       0x64 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivint32.15
+                0x0000000008000fb0       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testadduint32.16
+                0x0000000008001008       0x88 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubuint32.17
+                0x0000000008001090       0xcc /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmuluint32.18
+                0x000000000800115c       0x64 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivuint32.20
+                0x00000000080011c0       0x44 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testaddint16.21
+                0x0000000008001204       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubint16.22
+                0x000000000800125c       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmulint16.23
+                0x00000000080012b4       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivint16.25
+                0x000000000800130c       0x68 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testadduint16.26
+                0x0000000008001374       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubuint16.27
+                0x00000000080013ac       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmuluint16.28
+                0x00000000080013e4       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivuint16.30
+                0x000000000800141c       0x4c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testaddint8.31
+                0x0000000008001468       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubint8.32
+                0x00000000080014c0       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmulint8.33
+                0x0000000008001518       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivint8.35
+                0x0000000008001570       0x6c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testadduint8.36
+                0x00000000080015dc       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testsubuint8.37
+                0x0000000008001614       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testmuluint8.38
+                0x000000000800164c       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__testdivuint8.40
+                0x0000000008001684       0x4c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberint64.4
+                0x00000000080016d0       0x24 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberuint64.9
+                0x00000000080016f4       0x34 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberint32.14
+                0x0000000008001728       0x1c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberuint32.19
+                0x0000000008001744       0x2c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberint16.24
+                0x0000000008001770       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberuint16.29
+                0x00000000080017a8       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberint8.34
+                0x00000000080017e0       0x38 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.main__getnumberuint8.39
+                0x0000000008001818       0x34 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .text.execute_init_array
+                0x000000000800184c       0x74 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .text.Reset_Handler
+                0x00000000080018c0       0x6c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+                0x00000000080018c0                Reset_Handler
+ .text.Dummy_Handler
+                0x000000000800192c        0x6 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+                0x000000000800192c                DebugMon_Handler
+                0x000000000800192c                HardFault_Handler
+                0x000000000800192c                SysTick_Handler
+                0x000000000800192c                PendSV_Handler
+                0x000000000800192c                NMI_Handler
+                0x000000000800192c                UsageFault_Handler
+                0x000000000800192c                Dummy_Handler
+                0x000000000800192c                MemManage_Handler
+                0x000000000800192c                SVC_Handler
+                0x000000000800192c                BusFault_Handler
+ *fill*         0x0000000008001932        0x2 
+ .text          0x0000000008001934        0xc /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+                0x0000000008001934                atexit
+ .text          0x0000000008001940       0x34 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+                0x0000000008001940                __libc_fini_array
+ .text          0x0000000008001974       0x68 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+                0x0000000008001974                __register_exitproc
+ .text.startup  0x00000000080019dc       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .text.ada__exceptions__last_chance_handler__put.0
+                0x00000000080019f0       0x1c /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .text.__gnat_last_chance_handler
+                0x0000000008001a0c       0x5c /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+                0x0000000008001a0c                __gnat_last_chance_handler
+ .text.gnat__io__put__2
+                0x0000000008001a68        0x4 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+                0x0000000008001a68                gnat__io__put__2
+ .text.gnat__io__new_line
+                0x0000000008001a6c        0x4 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+                0x0000000008001a6c                gnat__io__new_line
+ .text.gnat__io__put
+                0x0000000008001a70        0x4 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+                0x0000000008001a70                gnat__io__put
+ .text.gnat__io__put__3
+                0x0000000008001a74        0x4 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+                0x0000000008001a74                gnat__io__put__3
+ .text.gnat__io__put_line
+                0x0000000008001a78        0x4 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+                0x0000000008001a78                gnat__io__put_line
+ .text.system__machine_reset__stop
+                0x0000000008001a7c       0x18 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+                0x0000000008001a7c                system__machine_reset__stop
+ .text          0x0000000008001a94       0xa0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+                0x0000000008001a94                __aeabi_ldivmod
+ .text          0x0000000008001b34       0x30 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000008001b34                __aeabi_uldivmod
+ .text          0x0000000008001b64      0x2cc /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+                0x0000000008001b64                __udivmoddi4
+ .text          0x0000000008001e30        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+                0x0000000008001e30                __aeabi_ldiv0
+                0x0000000008001e30                __aeabi_idiv0
+ *(.glue_7t)
+ .glue_7t       0x0000000008001e34        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000008001e34        0x0 linker stubs
+ *(.rodata .rodata* .gnu.linkonce.r.*)
+ .rodata        0x0000000008001e34        0xc /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .rodata        0x0000000008001e40        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+                0x0000000008001e40                _global_impure_ptr
+ .rodata.__gnat_last_chance_handler.str1.1
+                0x0000000008001e44       0x59 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ *fill*         0x0000000008001e9d        0x3 
+ .rodata        0x0000000008001ea0       0x18 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000008001eb8                . = ALIGN (0x4)
+ *(.init)
+ .init          0x0000000008001eb8        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+                0x0000000008001eb8                _init
+ .init          0x0000000008001ebc        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+                0x0000000008001ec4                . = ALIGN (0x4)
+                0x0000000008001ec4                __preinit_array_start = .
+ *(.preinit_array)
+                0x0000000008001ec4                __preinit_array_end = .
+                0x0000000008001ec4                . = ALIGN (0x4)
+                0x0000000008001ec4                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ .init_array.00000
+                0x0000000008001ec4        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ *(.init_array)
+ .init_array    0x0000000008001ec8        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+                0x0000000008001ecc                __init_array_end = .
+                0x0000000008001ecc                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+                0x0000000008001ecc                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x0000000008001ecc        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+                0x0000000008001ecc                _fini
+ .fini          0x0000000008001ed0        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+                0x0000000008001ed8                . = ALIGN (0x4)
+                0x0000000008001ed8                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x0000000008001ed8        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+ *(SORT_BY_NAME(.fini_array.*))
+                0x0000000008001edc                __fini_array_end = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+                0x0000000008001edc                . = ALIGN (0x4)
+                0x0000000008001edc                _efixed = .
+
+.vfp11_veneer   0x0000000008001edc        0x0
+ .vfp11_veneer  0x0000000008001edc        0x0 linker stubs
+
+.v4_bx          0x0000000008001edc        0x0
+ .v4_bx         0x0000000008001edc        0x0 linker stubs
+
+.iplt           0x0000000008001edc        0x0
+ .iplt          0x0000000008001edc        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+
+.rel.dyn        0x0000000008001edc        0x0
+ .rel.iplt      0x0000000008001edc        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+                0x0000000008001ee0                . = ALIGN (0x10)
+                0x0000000008001ee0                _etext = .
+
+.relocate       0x0000000020000000      0x430 load address 0x0000000008001ee0
+                0x0000000020000000                _srelocate = .
+ *(.ramfunc .ramfunc.*)
+ *(.data .data.*)
+ .data          0x0000000020000000      0x430 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+                0x0000000020000000                _impure_ptr
+                0x0000000020000430                . = ALIGN (0x4)
+                0x0000000020000430                _erelocate = .
+
+.bss            0x0000000020000430       0x1c load address 0x0000000008002310
+                0x0000000020000430                . = ALIGN (0x4)
+                0x0000000020000430                _sbss = .
+                0x0000000020000430                _szero = .
+                0x0000000020000430                __bss_start__ = .
+ *(.bss .bss.*)
+ .bss           0x0000000020000430       0x1c /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+ *(COMMON)
+                0x000000002000044c                . = ALIGN (0x4)
+                0x000000002000044c                _ebss = .
+                0x000000002000044c                _ezero = .
+                0x000000002000044c                __bss_end__ = .
+
+.heap           0x000000002000044c     0x2004 load address 0x000000000800232c
+                0x0000000020000450                . = ALIGN (0x8)
+ *fill*         0x000000002000044c        0x4 
+                0x0000000020000450                _sheap = .
+                0x0000000020002450                . = (. + HEAP_SIZE)
+ *fill*         0x0000000020000450     0x2000 
+                0x0000000020002450                . = ALIGN (0x8)
+                0x0000000020002450                _eheap = .
+                0x0000000020002450                __exidx_start = .
+
+.ARM.exidx      0x0000000020002450        0x8 load address 0x0000000008004330
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000000020002450        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+                0x0000000020002458                __exidx_end = .
+
+.eh_frame       0x0000000020002458        0x0 load address 0x0000000008004338
+ .eh_frame      0x0000000020002458        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+
+.tm_clone_table
+                0x0000000020002458        0x0 load address 0x0000000008004338
+ .tm_clone_table
+                0x0000000020002458        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+ .tm_clone_table
+                0x0000000020002458        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+
+.igot.plt       0x0000000008001edc        0x0 load address 0x0000000020002458
+ .igot.plt      0x0000000008001edc        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+
+.stack          0x0000000020002458     0x4000 load address 0x0000000008004338
+                0x0000000020002458                . = ALIGN (0x8)
+                0x0000000020002458                _sstack = .
+                0x0000000020006458                . = (. + STACK_SIZE)
+ *fill*         0x0000000020002458     0x4000 
+                0x0000000020006458                . = ALIGN (0x8)
+                0x0000000020006458                _estack = .
+                0x0000000020006458                . = ALIGN (0x4)
+                0x0000000020006458                _end = .
+                0x0000000020006458                end = _end
+                0x000000002001ffff                _ram_end_ = ((ORIGIN (ram) + LENGTH (ram)) - 0x1)
+OUTPUT(/home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x2e
+ .ARM.attributes
+                0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crti.o
+ .ARM.attributes
+                0x0000000000000020       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000052       0x30 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .ARM.attributes
+                0x0000000000000082       0x37 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .ARM.attributes
+                0x00000000000000b9       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000000000eb       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000000000000011d       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000000000000014f       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000000000000181       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000001b3       0x30 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .ARM.attributes
+                0x00000000000001e3       0x30 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+ .ARM.attributes
+                0x0000000000000213       0x30 /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+ .ARM.attributes
+                0x0000000000000243       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x0000000000000263       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000000000000283       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000000000002b5       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000000002d5       0x32 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000307       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtn.o
+
+.comment        0x0000000000000000       0xec
+ .comment       0x0000000000000000       0x57 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtbegin.o
+                                         0x58 (size before relaxing)
+ .comment       0x0000000000000057       0x3e /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+                                         0x3f (size before relaxing)
+ .comment       0x0000000000000095       0x58 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .comment       0x0000000000000095       0x57 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+                                         0x58 (size before relaxing)
+ .comment       0x00000000000000ec       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .comment       0x00000000000000ec       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .comment       0x00000000000000ec       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .comment       0x00000000000000ec       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .comment       0x00000000000000ec       0x3f /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(a-elchha.o)
+ .comment       0x00000000000000ec       0x3f /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(g-io.o)
+ .comment       0x00000000000000ec       0x3f /home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build/libgnatcm7.a(s-macres.o)
+ .comment       0x00000000000000ec       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .comment       0x00000000000000ec       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/crtend.o
+
+.debug_line     0x0000000000000000     0x1609
+ .debug_line    0x0000000000000000      0xba6 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .debug_line    0x0000000000000ba6      0x148 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .debug_line    0x0000000000000cee      0x12d /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .debug_line    0x0000000000000e1b       0xa5 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .debug_line    0x0000000000000ec0       0xda /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000f9a      0x14d /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .debug_line    0x00000000000010e7      0x177 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x000000000000125e       0x81 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x00000000000012df       0x63 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000000000001342      0x264 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x00000000000015a6       0x63 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+
+.debug_info     0x0000000000000000     0x35e9
+ .debug_info    0x0000000000000000       0x22 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .debug_info    0x0000000000000022      0x2d8 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .debug_info    0x00000000000002fa      0x90c /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .debug_info    0x0000000000000c06       0xf3 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .debug_info    0x0000000000000cf9      0x8a9 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .debug_info    0x00000000000015a2      0x937 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000001ed9      0x993 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000000000000286c       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_info    0x0000000000002892       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00000000000028b8      0xd0b /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00000000000035c3       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+
+.debug_abbrev   0x0000000000000000      0xbea
+ .debug_abbrev  0x0000000000000000       0x12 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .debug_abbrev  0x0000000000000012      0x11b /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .debug_abbrev  0x000000000000012d      0x201 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x000000000000032e       0xbd /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .debug_abbrev  0x00000000000003eb      0x192 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x000000000000057d      0x212 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x000000000000078f      0x286 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000000a15       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_abbrev  0x0000000000000a29       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x0000000000000a3d      0x199 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000000000000bd6       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+
+.debug_aranges  0x0000000000000000      0x2c0
+ .debug_aranges
+                0x0000000000000000      0x170 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .debug_aranges
+                0x0000000000000170       0x30 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .debug_aranges
+                0x00000000000001a0       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .debug_aranges
+                0x00000000000001e0       0x18 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000000000001f8       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x0000000000000218       0x28 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000240       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_aranges
+                0x0000000000000260       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x0000000000000280       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+
+.debug_str      0x0000000000000000     0x1f28
+ .debug_str     0x0000000000000000       0x4b /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .debug_str     0x000000000000004b      0x37f /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+                                        0x408 (size before relaxing)
+ .debug_str     0x00000000000003ca      0x55d /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+                                        0x620 (size before relaxing)
+ .debug_str     0x0000000000000927       0xc1 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+                                        0x22f (size before relaxing)
+ .debug_str     0x00000000000009e8       0x94 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-impure.o)
+                                        0x5d5 (size before relaxing)
+ .debug_str     0x0000000000000a7c       0x52 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+                                        0x63e (size before relaxing)
+ .debug_str     0x0000000000000ace       0x77 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+                                        0x651 (size before relaxing)
+ .debug_str     0x0000000000000b45       0x76 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+                                         0x84 (size before relaxing)
+ .debug_str     0x0000000000000bbb       0x84 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x0000000000000bbb     0x133a /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+                                       0x141b (size before relaxing)
+ .debug_str     0x0000000000001ef5       0x33 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_dvmd_tls.o)
+                                         0x88 (size before relaxing)
+
+.debug_ranges   0x0000000000000000      0x2a8
+ .debug_ranges  0x0000000000000000      0x168 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/intmath.o
+ .debug_ranges  0x0000000000000168       0x20 /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .debug_ranges  0x0000000000000188       0x40 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_ranges  0x00000000000001c8       0xe0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+
+.debug_frame    0x0000000000000000      0x1ec
+ .debug_frame   0x0000000000000000       0x6c /home/taste/workspace/adac-hybrid-arm/build/test/intmath/startup.o
+ .debug_frame   0x000000000000006c       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .debug_frame   0x000000000000008c       0x34 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .debug_frame   0x00000000000000c0       0x38 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000000000f8       0x50 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000148       0x44 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x000000000000018c       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000000001b8       0x34 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
+
+.debug_loc      0x0000000000000000     0x10ab
+ .debug_loc     0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-atexit.o)
+ .debug_loc     0x000000000000002c       0x5c /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-fini.o)
+ .debug_loc     0x0000000000000088      0x112 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__atexit.o)
+ .debug_loc     0x000000000000019a       0xc6 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv5/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x0000000000000260      0xe4b /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv5/hard/libgcc.a(_udivmoddi4.o)
