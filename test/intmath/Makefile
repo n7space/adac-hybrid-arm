@@ -26,6 +26,7 @@ SRC= \
 OBJ= \
 	$(SRC:%.adb=${OUT_DIR}/%.o) \
 	${OUT_DIR}/utils.o \
+	${OUT_DIR}/reporting.o \
 	${OUT_DIR}/startup.o
 
 .PHONY: all clean

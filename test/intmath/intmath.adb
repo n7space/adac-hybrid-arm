@@ -19,21 +19,20 @@ use Interfaces;
 with utils;
 use utils;
 
+with reporting;
+
 procedure Main is
 
     NoFailure : Boolean := True;
 
-    -- Hooks for debugger
     procedure ReportError(errorNo : in Integer) is
     begin
-        -- NOP, can hooked up in a debugger
-        return;
+        reporting.ReportError(errorNo);
     end ReportError;
 
     procedure ReportSuccess is
     begin
-        -- NOP, can hooked up in a debugger
-        return;
+        reporting.ReportSuccess;
     end ReportSuccess;
 
     -- Signed Integer 64
