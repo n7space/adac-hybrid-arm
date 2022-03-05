@@ -29,6 +29,7 @@ COMMON_CFLAGS = \
 
 CFLAGS= ${COMMON_CFLAGS} \
 	-Wall \
+	-Wadac,keep_intermediates \
 	-Wgnat,-gnatif \
 	-Wgnat,-I../../src/gnat-runtime/src \
 	-Wgnat,-I../utils \
