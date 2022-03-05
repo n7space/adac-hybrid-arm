@@ -193,8 +193,11 @@ begin
     end if;
 end TestDoubleConversions;
 
+-- Tests invocations need to be in a different procedure,
+-- since if they are in main, a floating point instruction
+-- is used before FPU initialization
+procedure RunTests is
 begin
-    initFpu;
     -- Float
     TestCmpFloat;
     TestFloatConversions;
@@ -220,34 +223,40 @@ begin
                  GetFloat(-4.0),
                   GetFloat(125.0));
     -- Double
-    TestCmpDouble;
-    TestDoubleConversions;
-    TestAddDouble(GetDouble(100.5),
-                GetDouble(5000.3),
-                GetDouble(5100.8));
-    TestSubDouble(GetDouble(1020.40),
-                 GetDouble(2030.50),
-                GetDouble(-1010.1));
-    TestMulDouble(GetDouble(2000.15),
-                 GetDouble(3000.30),
-                 GetDouble(6001050.045));
-    TestDivDouble(GetDouble(500.0),
-                  GetDouble(4.0),
-                  GetDouble(125.0));
-    TestDivDouble(GetDouble(-500.0),
-                   GetDouble(4.0),
-                  GetDouble(-125.0));
-    TestDivDouble(GetDouble(500.0),
-                 GetDouble(-4.0),
-                 GetDouble(-125.0));
-    TestDivDouble(GetDouble(-500.0),
-                  GetDouble(-4.0),
-                   GetDouble(125.0));
-
+    --Removed, as the target does not support Double Floating Point Instructions
+    if False then 
+        TestCmpDouble;
+        TestDoubleConversions;
+        TestAddDouble(GetDouble(100.5),
+                      GetDouble(5000.3),
+                      GetDouble(5100.8));
+        TestSubDouble(GetDouble(1020.40),
+                      GetDouble(2030.50),
+                      GetDouble(-1010.1));
+        TestMulDouble(GetDouble(2000.15),
+                      GetDouble(3000.30),
+                      GetDouble(6001050.045));
+        TestDivDouble(GetDouble(500.0),
+                      GetDouble(4.0),
+                      GetDouble(125.0));
+        TestDivDouble(GetDouble(-500.0),
+                      GetDouble(4.0),
+                      GetDouble(-125.0));
+        TestDivDouble(GetDouble(500.0),
+                      GetDouble(-4.0),
+                      GetDouble(-125.0));
+        TestDivDouble(GetDouble(-500.0),
+                      GetDouble(-4.0),
+                      GetDouble(125.0));
+    end if;
     if NoFailure then
         Success;
     end if;
+end RunTests;
 
+begin
+    initFpu;
+    RunTests;
     loop
         null;
     end loop;
