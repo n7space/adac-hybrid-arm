@@ -29,7 +29,6 @@ COMMON_CFLAGS = \
 
 CFLAGS= ${COMMON_CFLAGS} \
 	-Wall \
-	-Wadac,keep_intermediates \
 	-Wgnat,-gnatif \
 	-Wgnat,-I../../src/gnat-runtime/src \
 	-Wgnat,-I../utils \
@@ -42,7 +41,6 @@ LFLAGS= \
 	-Wl,--gc-sections \
 	-eexception_table \
     -specs=nosys.specs \
-	-Wl,-Map=main.map \
 	-T../ld/stm32f405.ld
 
 ADAC=${TOP_DIR}/src/arm-elf-adac/arm-elf-adac
