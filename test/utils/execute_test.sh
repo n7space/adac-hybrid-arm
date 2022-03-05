@@ -1,7 +1,8 @@
 #!/bin/sh
 
 ELF_NAME="$(basename $1)"
-LOG_FILE="${ELF_NAME}.log"
+ELF_DIR="$(dirname $1)"
+LOG_FILE="${ELF_DIR}/${ELF_NAME}.log"
 SCRIPT_DIR="$(dirname $0)"
 
 echo "Testing $1"
