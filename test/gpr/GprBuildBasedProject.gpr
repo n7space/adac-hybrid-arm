@@ -32,8 +32,8 @@ project GprBuildBasedProject is
          "-mthumb",
          "-ffunction-sections");
 
-   Ada_System_Includes := ("-Wgnat,-I/home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/src");
-   Gnat_Lib_Dir := ("-L/home/taste/workspace/adac-hybrid-arm/src/gnat-runtime/build");
+   Ada_System_Includes := ("-Wgnat,-I../../../../src/gnat-runtime/src");
+   Gnat_Lib_Dir := ("-L../../../../src/gnat-runtime/build");
 
    package Naming is
 	   for Body_Suffix ("Ada") use ".adb";
@@ -80,7 +80,7 @@ project GprBuildBasedProject is
           "-specs=nosys.specs",
           "-Wl,-Map=main.map",
           "-Wl,--gc-sections",
-          "-T/home/taste/workspace/adac-hybrid-arm/test/ld/stm32f405.ld")
+          "-T../../../test/ld/stm32f405.ld")
           & Gnat_Lib_Dir;
 
       case Build is
