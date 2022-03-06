@@ -13,37 +13,43 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-with BitstreamBase;
-use BitstreamBase;
-
-with BitstreamIntegers;
-use BitstreamIntegers;
-
-with Interfaces;
-use Interfaces;
-
-with uper_asn1_rtl;
-use uper_asn1_rtl;
+with adaasn1rtl.encoding.uper;
+use adaasn1rtl.encoding.uper;
 
 with adaasn1rtl;
 use adaasn1rtl;
 
+with adaasn1rtl.encoding;
+use adaasn1rtl.encoding;
+
+with Interfaces;
+use Interfaces;
+
+with cpu;
+use cpu;
+
 with utils;
 use utils;
 
-with reporting;
-
 procedure Main with Spark_Mode is
+
+    procedure SetupHardware is
+      tempPm5ctl0 : uint16_t;
+    begin
+      WDTCTL := WDTPW or WDTHOLD;
+      tempPm5ctl0 := PM5CTL0;
+      PM5CTL0 := tempPm5ctl0 and not LOCKLPM5;
+    end SetupHardware;
 
     -- Hooks for debugger
     procedure Failure(no : Integer) is
     begin
-        reporting.ReportError(no);
+        null;
     end Failure;
 
     procedure Success is
     begin
-        reporting.ReportSuccess;
+        null;
     end Success;
 
     function test_BaseRtl return Boolean is
@@ -101,7 +107,7 @@ procedure Main with Spark_Mode is
             Failure(6);
             return False;
           end if;
-        return True;
+          return True;
     end test_BaseRtl;
 
     function test_UperRtl return Boolean is
@@ -152,6 +158,7 @@ procedure Main with Spark_Mode is
     end test_UperRtl;
 
 begin
+    SetupHardware;
     if test_BaseRtl and test_UperRtl then
       Success;
     end if;
