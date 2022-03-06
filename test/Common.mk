@@ -13,7 +13,7 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-TOP_DIR=$(realpath ../../)
+TOP_DIR?=$(realpath ../../)
 UTILS_SRC_DIR=${TOP_DIR}/test/utils
 BSP_DIR=${TOP_DIR}/test/bsp
 
@@ -31,8 +31,8 @@ CFLAGS= ${COMMON_CFLAGS} \
 	-Wall \
 	-Wadac,keep_intermediates \
 	-Wgnat,-gnatif \
-	-Wgnat,-I../../src/gnat-runtime/src \
-	-Wgnat,-I../utils \
+	-Wgnat,-I${TOP_DIR}/src/gnat-runtime/src \
+	-Wgnat,-I${TOP_DIR}/test/utils \
 	-Wgnat,--function-sections \
 	-I${BSP_DIR}/src \
 	-g
@@ -42,7 +42,7 @@ LFLAGS= \
 	-Wl,--gc-sections \
 	-eexception_table \
     -specs=nosys.specs \
-	-T../ld/stm32f405.ld
+	-T${TOP_DIR}/test/ld/stm32f405.ld
 
 ADAC=${TOP_DIR}/src/arm-elf-adac/arm-elf-adac
 

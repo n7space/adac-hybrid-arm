@@ -25,31 +25,22 @@ use adaasn1rtl.encoding;
 with Interfaces;
 use Interfaces;
 
-with cpu;
-use cpu;
+with reporting;
 
 with utils;
 use utils;
 
 procedure Main with Spark_Mode is
 
-    procedure SetupHardware is
-      tempPm5ctl0 : uint16_t;
-    begin
-      WDTCTL := WDTPW or WDTHOLD;
-      tempPm5ctl0 := PM5CTL0;
-      PM5CTL0 := tempPm5ctl0 and not LOCKLPM5;
-    end SetupHardware;
-
     -- Hooks for debugger
     procedure Failure(no : Integer) is
     begin
-        null;
+        reporting.ReportError(no);
     end Failure;
 
     procedure Success is
     begin
-        null;
+        reporting.ReportSuccess;
     end Success;
 
     function test_BaseRtl return Boolean is
@@ -158,7 +149,6 @@ procedure Main with Spark_Mode is
     end test_UperRtl;
 
 begin
-    SetupHardware;
     if test_BaseRtl and test_UperRtl then
       Success;
     end if;
