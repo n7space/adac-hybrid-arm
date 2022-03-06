@@ -2,11 +2,11 @@
 --                                                                          --
 --                         GNAT RUN-TIME COMPONENTS                         --
 --                                                                          --
---                       S Y S T E M . I M G _ L L I                        --
+--                 S Y S T E M . B I T F I E L D _ U T I L S                --
 --                                                                          --
 --                                 S p e c                                  --
 --                                                                          --
---          Copyright (C) 1992-2021, Free Software Foundation, Inc.         --
+--               Copyright (C) 2019, Free Software Foundation, Inc.         --
 --                                                                          --
 -- GNAT is free software;  you can  redistribute it  and/or modify it under --
 -- terms of the  GNU General Public License as published  by the Free Soft- --
@@ -15,9 +15,9 @@
 -- OUT ANY WARRANTY;  without even the  implied warranty of MERCHANTABILITY --
 -- or FITNESS FOR A PARTICULAR PURPOSE.                                     --
 --                                                                          --
---                                                                          --
---                                                                          --
---                                                                          --
+-- As a special exception under Section 7 of GPL version 3, you are granted --
+-- additional permissions described in the GCC Runtime Library Exception,   --
+-- version 3.1, as published by the Free Software Foundation.               --
 --                                                                          --
 -- You should have received a copy of the GNU General Public License and    --
 -- a copy of the GCC Runtime Library Exception along with this program;     --
@@ -29,27 +29,20 @@
 --                                                                          --
 ------------------------------------------------------------------------------
 
---  This package contains the routines for supporting the Image attribute for
---  signed integer types larger Integer, and also for conversion operations
---  required in Text_IO.Integer_IO for such types.
+with System.Bitfield_Utils;
 
-with System.Image_I;
+package body System.Bitfields is
 
-package System.Img_LLI is
-   pragma Pure;
+   procedure Copy_Bitfield
+     (Src_Address  : Address;
+      Src_Offset   : Utils.Bit_Offset_In_Byte;
+      Dest_Address : Address;
+      Dest_Offset  : Utils.Bit_Offset_In_Byte;
+      Size         : Utils.Bit_Size)
+     is
+    begin
+      Utils.Copy_Bitfield(Src_Address, Src_Offset, Dest_Address, Dest_Offset, Size);
+    end Copy_Bitfield;        
 
-   package Impl is new Image_I (Long_Long_Integer);
 
-   procedure Image_Long_Long_Integer
-     (V : Long_Long_Integer;
-      S : in out String;
-      P : out Natural)
-     renames Impl.Image_Integer;
-
-   procedure Set_Image_Long_Long_Integer
-     (V : Long_Long_Integer;
-      S : in out String;
-      P : in out Natural)
-     renames Impl.Set_Image_Integer;
-
-end System.Img_LLI;
+end System.Bitfields;
