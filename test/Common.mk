@@ -31,7 +31,7 @@ CFLAGS= ${COMMON_CFLAGS} \
 	-Wall \
 	-Wadac,keep_intermediates \
 	-Wgnat,-gnatif \
-	-Wgnat,-I${TOP_DIR}/src/gnat-runtime/src \
+	-Wgnat,-I${TOP_DIR}/build/include \
 	-Wgnat,-I${TOP_DIR}/test/utils \
 	-Wgnat,--function-sections \
 	-I${BSP_DIR}/src \
@@ -44,8 +44,8 @@ LFLAGS= \
     -specs=nosys.specs \
 	-T${TOP_DIR}/test/ld/stm32f405.ld
 
-ADAC=${TOP_DIR}/src/arm-elf-adac/arm-elf-adac
+ADAC=${TOP_DIR}/build/bin/arm-elf-adac
 
-GNAT_LIB_DIR?=${TOP_DIR}/src/gnat-runtime/build
+GNAT_LIB_DIR?=${TOP_DIR}/build/lib
 
 LIBS= -lc -lgnatcm7

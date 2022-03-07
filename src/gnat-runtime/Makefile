@@ -34,6 +34,8 @@ GNAT_CRT_ARM_SF=libgnatcm7sf.a
 
 BUILD_DIR=$(shell realpath build)
 SRC_DIR=$(shell realpath src)
+LIB_DIR=$(shell realpath ../../build/lib)
+INC_DIR=$(shell realpath ../../build/include)
 
 ARM_OBJ_DIR=${BUILD_DIR}/arm
 ARM_OBJ_SF_DIR=${BUILD_DIR}/armsf
@@ -42,6 +44,12 @@ ARM_OBJ_SF_DIR=${BUILD_DIR}/armsf
 .PHONY: all clean
 
 all: ${BUILD_DIR}/${GNAT_CRT_ARM} ${BUILD_DIR}/${GNAT_CRT_ARM_SF}
+	mkdir -p ${LIB_DIR}
+	mkdir -p ${INC_DIR}
+	cp ${BUILD_DIR}/${GNAT_CRT_ARM} ${LIB_DIR}
+	cp ${BUILD_DIR}/${GNAT_CRT_ARM_SF} ${LIB_DIR}
+	cp -f ${SRC_DIR}/*.ad* ${INC_DIR}
+
 
 ${BUILD_DIR}:
 	mkdir -p $@
@@ -77,3 +85,5 @@ ifneq ("$(wildcard $(ARM_OBJ_SF_DIR)/Makefile)","")
 	${MAKE} -C ${ARM_OBJ_SF_DIR} clean
 endif
 	rm -r -f ${BUILD_DIR}
+	rm -r -f ${LIB_DIR}
+	rm -r -f ${INC_DIR}
