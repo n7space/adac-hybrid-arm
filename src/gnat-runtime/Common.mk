@@ -29,16 +29,40 @@
 ##                                                                          ##
 ##--------------------------------------------------------------------------##
 
-GNAT_CRT_ARM=libgnatcm7.a
+ADA_CC=arm-eabi-gcc
+ADA_CFLAGS=-gnatpg \
+	-gnatwns \
+	${COMMON_CFLAGS}
 
-COMMON_CFLAGS = -Os \
-	-ffunction-sections \
-	-fdata-sections \
-	-march=armv7e-m \
-	-mcpu=cortex-m7 \
-	-mfloat-abi=hard \
-    -mfpu=fpv5-d16 \
-    -mlittle-endian \
-    -mthumb 
+ARM_CC=arm-none-eabi-gcc
+ARM_AR=arm-none-eabi-ar
 
-include ../../Common.mk
+ARM_CFLAGS=${COMMON_CFLAGS}
+	
+
+.PHONY: all clean
+
+all: ${GNAT_CRT_ARM}
+
+SRC= $(wildcard *.adb)
+OBJ=$(SRC:%.adb=%.o)
+
+C_SRC=$(wildcard *.c)
+C_OBJ=$(C_SRC:%.c=%.o)
+
+%.s: %.adb
+	$(ADA_CC) $(ADA_CFLAGS) -S $<
+
+%.o: %.s
+	$(ARM_CC) $(ARM_CFLAGS) -c $< -o $@
+
+%.o: %.c
+	$(ARM_CC) $(ARM_CFLAGS) -c $< -o $@
+
+${GNAT_CRT_ARM}: ${OBJ} ${C_OBJ}
+	${AR} cr $@ ${OBJ} ${C_OBJ}
+
+clean:
+	rm -f *.o
+	rm -f *.ali
+	rm -f ${GNAT_CRT_ARM}

@@ -30,15 +30,18 @@
 ##--------------------------------------------------------------------------##
 
 GNAT_CRT_ARM=libgnatcm7.a
+GNAT_CRT_ARM_SF=libgnatcm7sf.a
 
 BUILD_DIR=$(shell realpath build)
 SRC_DIR=$(shell realpath src)
+
 ARM_OBJ_DIR=${BUILD_DIR}/arm
+ARM_OBJ_SF_DIR=${BUILD_DIR}/armsf
 
 
 .PHONY: all clean
 
-all: ${BUILD_DIR}/${GNAT_CRT_ARM}
+all: ${BUILD_DIR}/${GNAT_CRT_ARM} ${BUILD_DIR}/${GNAT_CRT_ARM_SF}
 
 ${BUILD_DIR}:
 	mkdir -p $@
@@ -50,13 +53,27 @@ ${ARM_OBJ_DIR}: ${BUILD_DIR}
 	cp -f ${SRC_DIR}/*.* ${ARM_OBJ_DIR}/
 	cp -f Makefile.cm7 ${ARM_OBJ_DIR}/Makefile
 
+# The entire source must be copied, to avoid issues with paths;
+# make is executed within the directory to avoid issues with search paths
+${ARM_OBJ_SF_DIR}: ${BUILD_DIR}
+	mkdir -p $@
+	cp -f ${SRC_DIR}/*.* ${ARM_OBJ_SF_DIR}/
+	cp -f Makefile.cm7sf ${ARM_OBJ_SF_DIR}/Makefile
+
 ${BUILD_DIR}/${GNAT_CRT_ARM}: ${ARM_OBJ_DIR}
 	${MAKE} -C ${ARM_OBJ_DIR}
 	cp ${ARM_OBJ_DIR}/${GNAT_CRT_ARM} ${BUILD_DIR}/
+
+${BUILD_DIR}/${GNAT_CRT_ARM_SF}: ${ARM_OBJ_SF_DIR}
+	${MAKE} -C ${ARM_OBJ_SF_DIR}
+	cp ${ARM_OBJ_SF_DIR}/${GNAT_CRT_ARM_SF} ${BUILD_DIR}/
 
 # Ifs are present to prevent a clean error if the makefiles are already deleted
 clean:
 ifneq ("$(wildcard $(ARM_OBJ_DIR)/Makefile)","")
 	${MAKE} -C ${ARM_OBJ_DIR} clean
+endif
+ifneq ("$(wildcard $(ARM_OBJ_SF_DIR)/Makefile)","")
+	${MAKE} -C ${ARM_OBJ_SF_DIR} clean
 endif
 	rm -r -f ${BUILD_DIR}
