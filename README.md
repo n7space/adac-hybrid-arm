@@ -3,9 +3,18 @@ ADAC-HYBRID-ARM
 
 A wrapper for AdaCore's arm-eabi-gcc, so that it can be hooked up to standard arm-none-eabi toolchain.
 
+Prerequisites
+---------------
+* Install the newest version of qemu-system-arm 
+(this software was developed with QEMU 6.2.50)
+* Install arm-eabi-gcc Ada ARM cross-compiler
+(this software was developed with GNAT Community 2021 20210519)
+* Install make, gprbuild and arm-none-eabi-gcc C/C++ ARM crosscompiler
+
 Installation
 ---------------
-Add execution permissions to arm-elf-adabind and arm-elf-adac and (if needed) add them to system PATH.
+Execute make to build and test all necessary binaries.
+You can add build/bin to system PATH for adac to be accessible from any place.
 
 Usage
 ---------------
