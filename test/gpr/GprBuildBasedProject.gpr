@@ -40,7 +40,7 @@ project GprBuildBasedProject is
    end Naming;
 
    package Binder is
-      for Driver ("Ada")  use "arm-elf-adabind";
+      for Driver ("Ada")  use "../../../../build/bin/arm-elf-adabind";
    end Binder;
 
    -- Need_Ada : TRUE
