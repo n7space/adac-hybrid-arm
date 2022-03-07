@@ -32,7 +32,7 @@ project GprBuildBasedProject is
          "-mthumb",
          "-ffunction-sections");
 
-   Ada_System_Includes := ("-Wgnat,-I../../../../src/gnat-runtime/src");
+   Ada_System_Includes := ("-Wgnat,-I../../../../build/include");
    Gnat_Lib_Dir := ("-L../../../../src/gnat-runtime/build");
 
    package Naming is
@@ -47,7 +47,7 @@ project GprBuildBasedProject is
 
    package Compiler is
       for Driver ("C") use "arm-none-eabi-gcc";
-      for Driver ("Ada") use "arm-elf-adac";
+      for Driver ("Ada") use "../../../../build/bin/arm-elf-adac";
 
       for Required_Switches ("C") use ("-c");
       for Required_Switches ("Ada") use ("-c");
