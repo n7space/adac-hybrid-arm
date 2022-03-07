@@ -17,13 +17,35 @@ TOP_DIR?=$(realpath ../../../)
 
 include ../../Common.mk
 
+# Overwrite some variables to compile with soft-float, to avoid issue with 
+# double precision floating point instructions on QEMU
+COMMON_CFLAGS = \
+	-ffunction-sections \
+	-fdata-sections \
+	-march=armv7e-m \
+	-mcpu=cortex-m7 \
+	-mfloat-abi=soft \
+    -mlittle-endian \
+    -mthumb 
+
+CFLAGS= ${COMMON_CFLAGS} \
+	-Wall \
+	-Wadac,keep_intermediates \
+	-Wgnat,-gnatif \
+	-Wgnat,-I${TOP_DIR}/src/gnat-runtime/src \
+	-Wgnat,-I${TOP_DIR}/test/utils \
+	-Wgnat,--function-sections \
+	-I${BSP_DIR}/src \
+	-g
+
+LIBS= -lc -lgnatcm7sf
+
 NAME=managemode
 
 OUT_DIR=${TOP_DIR}/build/test/${NAME}
 BINARY_NAME=${OUT_DIR}/${NAME}.elf
 
 SRC= \
-	init.c \
 	main.adb \
 	envstub.adb \
 	SDL/code/managemode.adb \
@@ -39,8 +61,7 @@ OBJ= \
 	$(SRC:%.adb=${OUT_DIR}/%.o) \
 	${OUT_DIR}/utils.o \
 	${OUT_DIR}/reporting.o \
-	${OUT_DIR}/startup.o \
-	${OUT_DIR}/fpu.o
+	${OUT_DIR}/startup.o
 
 .PHONY: all clean
 
@@ -64,9 +85,6 @@ ${OUT_DIR}/reporting.o: ${UTILS_SRC_DIR}/reporting.adb ${UTILS_SRC_DIR}/reportin
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
 ${OUT_DIR}/startup.o: ../../startup/bare.c
-	${ADAC} ${CFLAGS} -o $@ -c $<
-
-${OUT_DIR}/fpu.o: ${BSP_DIR}/src/Fpu/Fpu.c
 	${ADAC} ${CFLAGS} -o $@ -c $<
 
 test: ${BINARY_NAME}

@@ -173,25 +173,25 @@ procedure Main is
     end test_safeEntry;
 
 begin
-    initFpu;
     reporting.Init;
 
     if not test_setSafeVoltage then
         failed := True;
-        reporting.ReportErrorString("cmdVoltage");
+        reporting.ReportError(1);
     end if;
     if not test_gatherHkInIdle then
         failed := True;
-        reporting.ReportErrorString("cmdHkIdle");
+        reporting.ReportError(2);
     end if;
     if not test_commandMode then
         failed := True;
-        reporting.ReportErrorString("cmdMode");
+        reporting.ReportError(3);
     end if;
     if not test_safeEntry then
         failed := True;
-        reporting.ReportErrorString("safeEntry");
+        reporting.ReportError(4);
     end if;
+    
 
     if not failed then
         reporting.ReportSuccess;
