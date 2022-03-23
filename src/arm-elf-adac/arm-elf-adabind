@@ -18,27 +18,51 @@
 
 import sys
 import os
+from typing import List, Dict
 
 
 class BexchData:
+    """Bexch data."""
+
+    sections : Dict[str, List[str]]
+    """Dictionary of sections and their data."""
 
     def __init__(self):
         self.sections = {}
         self._last_section = None
 
-    def is_section_header(self, line):
+    def is_section_header(self, line : str) -> bool:
+        """
+        Check whether the given line is a section header.
+        param line: line to be checked
+        returns: whether the line is a section header
+        """
         return line[0] == '[' and line[-1] == ']'
 
-    def begin_new_section(self, section_name):
+    def begin_new_section(self, section_name : str):
+        """
+        Add a new empty section and set it as current
+        param section_name: name of the new section
+        """
         self.sections[section_name] = []
         self._last_section = section_name
 
-    def append_line(self, line):
+    def append_line(self, line : str):
+        """
+        Append line to the current section.
+        :param line: line to be added
+        :returns 
+        """
         if self._last_section:
             self.sections[self._last_section].append(line)
 
 
-def read_bexch_file(filename):
+def read_bexch_file(filename : str) -> BexchData:
+    """
+    Read Bexch data from file.
+    param filename: name of the file to be read
+    returns: Bexch data
+    """
     bexch = open(filename)
     data = BexchData()
 
@@ -51,7 +75,12 @@ def read_bexch_file(filename):
     return data
 
 
-def write_bexch_file(data, filename):
+def write_bexch_file(data : BexchData, filename : str):
+    """
+    Write Bexch data to file.
+    param data: Bexch data to be written
+    param filename: name of the file to be written
+    """
     bexch = open(filename, 'w')
 
     for section in data.sections:
