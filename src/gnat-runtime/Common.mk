@@ -66,4 +66,3 @@ clean:
 	rm -f *.o
 	rm -f *.ali
 	rm -f ${GNAT_CRT_ARM}
-	
