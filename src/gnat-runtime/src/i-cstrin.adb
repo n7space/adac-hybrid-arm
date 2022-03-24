@@ -99,6 +99,19 @@ package body Interfaces.C.Strings is
       Item := Null_Ptr;
    end Free;
 
+   ----------------
+   -- New_String --
+   ----------------
+
+   function New_String (Str : String) return chars_ptr is
+
+      -- Use of this function is illegal in flight software
+      -- due to dynamic memory allocation
+   begin
+      raise Program_Error;
+      return Null_Ptr;
+   end New_String;
+
 
    ----------
    -- Peek --

@@ -59,6 +59,8 @@ package Interfaces.C.Strings is
    --  When deallocation is prohibited (eg: cert runtimes) this routine
    --  will raise Program_Error
 
+   function New_String (Str : String) return chars_ptr;
+
    Dereference_Error : exception;
 
    function Value (Item : chars_ptr) return char_array;
