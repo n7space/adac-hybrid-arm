@@ -16,7 +16,6 @@
 SRC_DIR=src
 BUILD_DIR=build
 INSTALL_DIR=/opt/arm-elf-adac
-SUDO=sudo
 
 .PHONY: all test adac rt clean install
 
@@ -37,7 +36,7 @@ clean:
 	( ${MAKE} -C ${SRC_DIR}/gnat-runtime clean ) || exit $$?;
 
 install: adac rt
-	${SUDO} mkdir -p ${INSTALL_DIR}
-	${SUDO} cp -f -r ${BUILD_DIR}/bin ${INSTALL_DIR}
-	${SUDO} cp -f -r ${BUILD_DIR}/include ${INSTALL_DIR}
-	${SUDO} cp -f -r ${BUILD_DIR}/lib ${INSTALL_DIR}
+	mkdir -p ${INSTALL_DIR}
+	cp -f -r ${BUILD_DIR}/bin ${INSTALL_DIR}
+	cp -f -r ${BUILD_DIR}/include ${INSTALL_DIR}
+	cp -f -r ${BUILD_DIR}/lib ${INSTALL_DIR}
