@@ -1,0 +1,198 @@
+#!/usr/bin/python3
+
+# This file is part of the adac-hybrid-arm distribution
+# Copyright (C) 2020, European Space Agency
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, version 3.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+import sys
+import os
+from typing import List, Dict
+
+ADA_DEF_EXTENSION = ".adb"
+"""Extension of Ada module bodies."""
+
+ADA_DEC_EXTENSION = ".ads"
+"""Extension of Ada module specifications."""
+
+ASM_EXTENSION = ".s"
+"""Extension of Assembly modules."""
+
+ALI_EXTENSION = ".ali"
+"""Extension of Ada intermediate files."""
+
+ADA_GCC = "arm-eabi-gcc"
+"""Ada compiler."""
+
+ARM_GCC="arm-none-eabi-gcc"
+"""ARM target compiler."""
+
+ADAC_OPTION_PREFIX="-Wadac,"
+"""Prefix for adac specific options."""
+
+GNAT_OPTION_PREFIX="-Wgnat,"
+"""Prefix for Ada compiler specific options."""
+DIRECT_GNAT_OPTION_PREFIX="-gnat"
+"""Prefix for pass-through Ada compiler specific options."""
+
+LANGUAGE_OPTION="-x"
+"""Source language option."""
+
+NOT_FORWARDED_OPTIONS={"-c", "-g", "-o", "-specs", "-Wl,", "-T"}
+"""Lists of options that are not forwarded to the Ada compiler."""
+
+ADA_MAIN="keep_ada_main"
+"""Adac option for keeping the Ada executable entry point name intact."""
+
+KEEP_INTERMEDIATES="keep_intermediates"
+"""Adac option for keeping the intermediate files."""
+
+def adaToBaseName(name : str) -> str:
+    """
+    Extract filename without the extension.
+    param name: file name
+    returns: file name without the extension
+    """
+    fileName, _ = os.path.splitext(os.path.basename(name))
+    return fileName
+
+def remove(path : str):
+    """
+    Remove the given file if it exists.
+    param path: name of the file to be removed
+    """
+    if os.path.exists(path):
+        print(f"Removing intermediate product {path}")
+        os.remove(path)
+
+def cleanUpIntermediates(baseName : str):
+    """
+    Remove the intermediate files for the given base file name.
+    param baseName: base file name (without extension)
+    """
+    for path in [
+        baseName + ASM_EXTENSION,
+        baseName + ALI_EXTENSION,
+        ]:
+        remove(path)
+
+def executeCmd(cmd : str):
+    """
+    Echo and execute the given command.
+    param cmd: command to be executed, given as a command line
+    """
+    print(cmd)
+    os.system(cmd)
+
+def findContructorNames(fileName : str) -> List[str]:
+    """
+    Find names of all constructors in the given file.
+    param fileName: name of the file to be parsed
+    returns: list of constructor names
+    """
+    with open(fileName) as file:
+        lines = file.readlines()
+        linesWithConstructors = [line for line in lines if "___elabb:" in line]
+        constructors = [line[:line.find(":")] for line in linesWithConstructors]
+        return constructors
+
+def appendConstructorSections(fileName : str, constructors : List[str]):
+    """
+    Appends constructors to init_array section (to be handled by C init).
+    param fileName: name of the assembly file to append the constructors to
+    param constructors: list of constructor names to be added
+    """
+    if len(constructors) == 0:
+        return
+    with open(fileName, "a") as file:
+        for constructor in constructors:
+            file.write("\t.section	.init_array,\"aw\"\n" \
+	                   "\t.balign 4\n" \
+	                   f"\t.word	{constructor}\n")
+
+
+def postprocessAsm(options : Dict[str, bool], fileName : str):
+    """
+    Perform posprocessing of an assembly file given the options.
+    param options: options for the postprocessing
+    param filename: name of the file to be postprocessed
+    """
+    if not options[ADA_MAIN]:
+        # This could be achieved via:
+        # -eentry - resulting in a possible rejection of the start files, which may be not desired; also,
+        #   this should be passed explicitly by the user, as that must be passed to the linker
+        #   (user can have more complex build; may use msp430-gcc directly, etc...);
+        # objcopy --redefine-sym - this must be done on an object file, which may or
+        #   may not be created, depending on flags to gcc;
+        # This solution seems to be the safest. A better one is welcome.
+        executeCmd(f"sed -i 's/_ada_main/main/g' {fileName}")
+    constructors = findContructorNames(fileName)
+    appendConstructorSections(fileName, constructors)
+
+
+options={
+    ADA_MAIN : False,
+    KEEP_INTERMEDIATES : False
+}
+
+def __parseOptions(options, adacOptions):
+    if KEEP_INTERMEDIATES in adacOptions:
+        options[KEEP_INTERMEDIATES] = True
+    if ADA_MAIN in adacOptions:
+        options[ADA_MAIN] = True
+
+gccCmdLine = ""
+gccOptions = []
+adacOptions = []
+gnatOptions = []
+adaFiles = []
+baseNames = []
+args = sys.argv[1:]
+ignoreNextOption = False
+
+for arg in args:
+    if ignoreNextOption:
+        ignoreNextOption = False
+        continue
+    if arg == LANGUAGE_OPTION:
+        # Adac is specialized in compiling Ada files, so this option is ignored
+        ignoreNextOption = True
+    elif arg.endswith(ADA_DEF_EXTENSION) or arg.endswith(ADA_DEC_EXTENSION):
+        adaFiles += [arg]
+        gccCmdLine += " " + adaToBaseName(arg) + ASM_EXTENSION
+    elif arg.startswith(GNAT_OPTION_PREFIX):
+        gnatOptions += [arg[len(GNAT_OPTION_PREFIX):]]
+    elif arg.startswith(DIRECT_GNAT_OPTION_PREFIX):
+        gnatOptions += [arg]
+    elif arg.startswith(ADAC_OPTION_PREFIX):
+        adacOptions += [arg[len(ADAC_OPTION_PREFIX):]]
+    elif arg.startswith("-") and not arg.startswith(tuple(NOT_FORWARDED_OPTIONS)):
+        gccOptions +=  [arg]
+        gccCmdLine += " " + arg
+    else:
+        gccCmdLine += " " + arg 
+try:
+    __parseOptions(options, adacOptions)
+    adaOptions = " ".join(gnatOptions + gccOptions)
+    for file in adaFiles:
+        baseName = adaToBaseName(file)
+        baseNames += [baseName]
+        asmFile = baseName + ASM_EXTENSION
+        executeCmd(f"{ADA_GCC} {adaOptions} -S {file}")
+        postprocessAsm(options, asmFile)
+
+    executeCmd(f"{ARM_GCC} {gccCmdLine}")
+finally:
+    if not options[KEEP_INTERMEDIATES]:
+        for name in baseNames:
+            cleanUpIntermediates(name)

@@ -1,0 +1,99 @@
+project GprBuildBasedProject is
+
+   type Build_Type is ("Debug");
+   Build : Build_Type := external ("CFG", "Debug");
+
+   for Create_Missing_Dirs use "True";
+
+   --  following to be updated with all relevant source dirs
+   for Source_Dirs use
+      ("src",
+       "../utils",
+       "../startup");
+
+   for Object_Dir use "../../build/test/gpr/obj";
+   for Exec_Dir   use "../../build/test/gpr";
+
+   for Languages use ("C", "Ada");
+
+   for Main use ("main.c");
+
+      Warning_Switches :=
+       ("-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Wno-unused-parameter");
+
+   SAMV71_Switches :=
+        ("-mcpu=cortex-m7",
+         "-mfloat-abi=hard",
+         "-mfpu=fpv5-d16",
+         "-mlittle-endian",
+         "-mthumb",
+         "-ffunction-sections");
+
+   Ada_System_Includes := ("-Wgnat,-I../../../../build/include");
+   Gnat_Lib_Dir := ("-L../../../../src/gnat-runtime/build");
+
+   package Naming is
+	   for Body_Suffix ("Ada") use ".adb";
+   end Naming;
+
+   package Binder is
+      for Driver ("Ada")  use "../../../../build/bin/arm-elf-adabind";
+   end Binder;
+
+   -- Need_Ada : TRUE
+
+   package Compiler is
+      for Driver ("C") use "arm-none-eabi-gcc";
+      for Driver ("Ada") use "../../../../build/bin/arm-elf-adac";
+
+      for Required_Switches ("C") use ("-c");
+      for Required_Switches ("Ada") use ("-c");
+
+      case Build is
+         when "Debug" =>
+            for Default_Switches ("C") use
+               ("-O0",
+                "-g")
+                & SAMV71_Switches;
+            for Default_Switches ("Ada") use
+               (
+                "-c",
+                "-Wall",
+	             "-Wadac,keep_intermediates",
+	             "-Wgnat,-gnatif")
+               & SAMV71_Switches
+               & Ada_System_Includes;
+      end case;
+   end Compiler;
+
+   package Linker is
+      for Driver use "arm-none-eabi-gcc";
+
+      Common_LD_Switches :=
+         (
+          "-Wl,-lc",
+          "-Wl,-lgnatcm7",
+          "-eexception_table",
+          "-specs=nosys.specs",
+          "-Wl,-Map=main.map",
+          "-Wl,--gc-sections",
+          "-T../../../test/ld/stm32f405.ld")
+          & Gnat_Lib_Dir;
+
+      case Build is
+         when "Debug" =>
+            for Default_Switches ("C") use
+                Common_LD_Switches
+                & SAMV71_Switches;
+      end case;
+
+   end Linker;
+
+   package Builder is
+      for Executable ("main.c") use "gpr.elf";
+   end Builder;
+
+end GprBuildBasedProject;
