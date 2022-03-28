@@ -14,8 +14,11 @@
 ## along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 SRC_DIR=src
+BUILD_DIR=build
+INSTALL_DIR=/opt/arm-elf-adac
+SUDO=sudo
 
-.PHONY: all test adac rt clean
+.PHONY: all test adac rt clean install
 
 all: adac rt test
 
@@ -32,3 +35,9 @@ clean:
 	( ${MAKE} -C test clean ) || exit $$?;
 	( ${MAKE} -C ${SRC_DIR}/arm-elf-adac clean ) || exit $$?;
 	( ${MAKE} -C ${SRC_DIR}/gnat-runtime clean ) || exit $$?;
+
+install: adac rt
+	${SUDO} mkdir -p ${INSTALL_DIR}
+	${SUDO} cp -f -r ${BUILD_DIR}/bin ${INSTALL_DIR}
+	${SUDO} cp -f -r ${BUILD_DIR}/include ${INSTALL_DIR}
+	${SUDO} cp -f -r ${BUILD_DIR}/lib ${INSTALL_DIR}
